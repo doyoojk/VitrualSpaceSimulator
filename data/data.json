@@ -1,0 +1,108 @@
+{
+  "rooms": [
+    {
+        "roomID": "PARTY_ROOM",
+        "updates": [
+          {
+            "timestamp": 0,
+            "roomSize": {"userCount": "3"},
+            "userPositions": [
+              {"userID": "0", "x": 0.8, "y": 0.1},
+              {"userID": "1", "x": 0.85, "y": 0.15},
+              {"userID": "2", "x": 0.9, "y": 0.1}
+            ]
+          },
+          {
+            "timestamp": 2000,
+            "roomSize": {"userCount": "4"},
+            "userPositions": [
+              {"userID": "3", "x": 0.5, "y": 0.5} 
+            ]
+          },
+          {
+            "timestamp": 5000, 
+            "roomSize": {"userCount": "4"},
+            "userPositions": [
+              {"userID": "3", "x": 0.5, "y": 0.5, "movingToX": 0.2, "movingToY": 0.9}
+            ]
+          },
+          {
+            "timestamp": 8000,
+            "roomSize": {"userCount": "5"},
+            "userPositions": [
+              {"userID": "4", "x": 0.5, "y": 0.5, "movingToX": 0.25, "movingToY": 0.85} 
+            ]
+          },
+          {
+            "timestamp": 10000,
+            "roomSize": {"userCount": "6"},
+            "userPositions": [
+              {"userID": "5", "x": 0.5, "y": 0.5, "movingToX": 0.3, "movingToY": 0.9} 
+            ]
+          }
+        ]
+      },
+      {
+        "roomID": "NETWORKING_ROOM",
+        "updates": [
+          {
+            "timestamp": 0,
+            "roomSize": {"userCount": "2"},
+            "userPositions": [
+              {"userID": "0", "x": 0.1, "y": 0.1},
+              {"userID": "1", "x": 0.15, "y": 0.15}
+            ]
+          },
+          {
+            "timestamp": 2000,
+            "roomSize": {"userCount": "3"},
+            "userPositions": [
+              {"userID": "2", "x": 0.5, "y": 0.5, "movingToX": 0.75, "movingToY": 0.75}
+            ]
+          },
+          {
+            "timestamp": 4000,
+            "roomSize": {"userCount": "4"},
+            "userPositions": [
+              {"userID": "3", "x": 0.5, "y": 0.5, "movingToX": 0.8, "movingToY": 0.8}
+            ]
+          },
+          {
+            "timestamp": 5000,
+            "roomSize": {"userCount": "6"},
+            "userPositions": [
+              {"userID": "4", "x": 0.5, "y": 0.5, "movingToX": 0.7, "movingToY": 0.1},
+              {"userID": "5", "x": 0.5, "y": 0.5, "movingToX": 0.8, "movingToY": 0.15}
+            ]
+          }
+        ]
+      },
+      {
+        "roomID": "GAME_ROOM",
+        "updates": [
+          {
+            "timestamp": 0,
+            "roomSize": {"userCount": "2"},
+            "userPositions": [
+              {"userID": "0", "x": 0.7, "y": 0.3},
+              {"userID": "1", "x": 0.8, "y": 0.35}
+            ]
+          },
+          {
+            "timestamp": 2000,
+            "roomSize": {"userCount": "3"},
+            "userPositions": [
+              {"userID": "2", "x": 0.5, "y": 0.5, "movingToX": 0.4, "movingToY": 0.9}
+            ]
+          },
+          {
+            "timestamp": 4000,
+            "roomSize": {"userCount": "4"},
+            "userPositions": [
+              {"userID": "3", "x": 0.5, "y": 0.5, "movingToX": 0.45, "movingToY": 0.85}
+            ]
+          }
+        ]
+      }
+  ]
+}

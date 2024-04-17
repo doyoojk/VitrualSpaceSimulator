@@ -119,6 +119,7 @@ void drawGameRoom() {
   if (playingTicTacToe) {
     drawTicTacToeBoard();
   }
+  drawChatBox();
 }
 
 

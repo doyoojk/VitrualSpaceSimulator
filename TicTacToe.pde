@@ -2,11 +2,12 @@ boolean playingTicTacToe = false;
 int[][] ticTacToeBoard = new int[3][3]; // 0 = empty, 1 = X, 2 = O
 boolean currentPlayerX = true; // X starts first
 int boardX = 20; // X position of the board on the screen
-int boardY = 600; // Y position of the board on the screen
+int boardY = 530; // Y position of the board on the screen
 
 // Audio Variables for the board
-SamplePlayer ticTacToeSound, gameWinSound;
-Gain ticTacToeSoundGain;
+SamplePlayer gameWinSound;
+WavePlayer ticTacToeMoveSound;
+Gain ticTacToeMoveGain;
 
 void drawTicTacToeBoard() {
     for (int i = 0; i < 3; i++) {
@@ -62,24 +63,26 @@ void resetTicTacToe() {
 }
 
 void playTicTacToeSound() {
-    try {
-        Sample ticTacToeSample = new Sample(dataPath("boardgame.wav"));
-        ticTacToeSound = new SamplePlayer(game_ac, ticTacToeSample);
-        ticTacToeSoundGain = new Gain(game_ac, 1, 0.5f);
-        ticTacToeSoundGain.addInput(ticTacToeSound);
-        game_ac.out.addInput(ticTacToeSoundGain);
+    float frequency = 1200.0f; // Hz
+    ticTacToeMoveSound = new WavePlayer(game_ac, frequency, Buffer.SINE);
+    ticTacToeMoveGain = new Gain(game_ac, 1, 0.01f);
+    ticTacToeMoveGain.addInput(ticTacToeMoveSound);
+    game_ac.out.addInput(ticTacToeMoveGain);
+    
+    Envelope ticTacToeEnv = new Envelope(game_ac, 0.3f); 
+    ticTacToeEnv.addSegment(0.05f, 100); 
+    ticTacToeEnv.addSegment(0.0f, 50); 
+    ticTacToeMoveGain.setGain(ticTacToeEnv);
 
-        ticTacToeSound.start(); // Start playing the sound
-    } catch (Exception e) {
-        println("Failed to reinitialize Tic-Tac-Toe sound: " + e.getMessage());
-    }
+    ticTacToeMoveSound.start();
+    
 }
 
 void playWinSound() {
     try {
         Sample winSample = new Sample(dataPath("gameWin.wav"));
         gameWinSound = new SamplePlayer(game_ac, winSample);
-        Gain winSoundGain = new Gain(game_ac, 1, 0.8f);  // Adjust volume as needed
+        Gain winSoundGain = new Gain(game_ac, 1, 2.0f);  // Adjust volume as needed
         winSoundGain.addInput(gameWinSound);
         game_ac.out.addInput(winSoundGain);
         
@@ -87,5 +90,4 @@ void playWinSound() {
     } catch (Exception e) {
         println("Failed to reinitialize Tic-Tac-Toe sound: " + e.getMessage());
     }
-  
 }

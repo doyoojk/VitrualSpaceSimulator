@@ -143,6 +143,7 @@ void drawPartyRoom() {
   partyCurrentUser.drawAvatar();
 
   drawReturnButton();
+  drawChatBox();
 }
 
 
@@ -159,7 +160,7 @@ void partyApplyUpdate(JSONObject update) {
     int userCount = roomSize.getInt("userCount");
     if (userCount > partyUsers.size()) {
         partyReverb.setSize(1 - (userCount * 0.1f));
-        println("reverb val " + partyReverb.getSize());
+        //println("reverb val " + partyReverb.getSize());
     }
     
     if (userCount == 4) {
@@ -217,7 +218,7 @@ void toggleSpeakerFocus() {
     // Set flags and print status
     isBirthdayToastPlaying = true;
     birthdayToastStartTime = millis(); // Record the start time
-    println("Speaker Focus Activated: birthdayToast.wav is now playing from the start.");
+    //println("Speaker Focus Activated: birthdayToast.wav is now playing from the start.");
 }
 
 void updateAudioState() {
@@ -225,7 +226,7 @@ void updateAudioState() {
         isBirthdayToastPlaying = false; // Reset the flag
         partyPlayer3.pause(true);
         partyPlayer3.setPosition(0);
-        println("birthdayToast.wav playback interval completed.");
+        //println("birthdayToast.wav playback interval completed.");
     }
 }
 

@@ -161,6 +161,7 @@ void drawNetworkingRoom() {
   networkingCurrentUser.drawAvatar();
   drawReturnButton();
   drawVolumeSlider();
+  drawChatBox();
 }
 
 void networkingApplyUpdate(JSONObject update) {

@@ -1,4 +1,5 @@
-# Immersive Echoes: Impact of Spatial Audio on Virtual Social Engagement and Realism
+# [Immersive Echoes](https://github.com/doyoojk/VitrualSpaceSimulator/blob/main/data/Immersive%20Echoes.pdf): Impact of Spatial Audio on Virtual Social Engagement and Realism
+
 ### Project Overview
 This project investigates the impact of spatial audio cues on enhancing user engagement and realism in virtual social gatherings. The study, conducted with college students from Georgia Tech, aims to bridge the gap between virtual and physical experiences through the use of spatial audio.
 

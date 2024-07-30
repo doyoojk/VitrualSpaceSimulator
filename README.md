@@ -39,6 +39,6 @@ The study results indicate that spatial audio cues enhance user engagement and r
 Spatial audio cues are critical in enhancing virtual experiences, improving participants' sense of engagement and realism. This research highlights the potential of spatial audio to create more lifelike and engaging virtual social interactions.
 
 ### References
-Davis, E. T., Scott, K., Pair, J., Hodges, L. F., & Oliverio, J. (1999). Can Audio Enhance Visual Perception and Performance in a Virtual Environment? Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 43(22), 1197-1201. https://doi.org/10.1177/154193129904302206
-Gibbs, Martin, et al. Proximity-Based Chat in a First Person Shooter: Using a Novel Voice Communication System for Online Play. 12 2006.
-Kern, Angelika C., and Wolfgang Ellermeier. “Audio in VR: Effects of a Soundscape and Movement-Triggered Step Sounds on Presence.” Frontiers, Frontiers, 4 Feb. 2020. www.frontiersin.org/articles/10.3389/frobt.2020.00020/full
+- Davis, E. T., Scott, K., Pair, J., Hodges, L. F., & Oliverio, J. (1999). Can Audio Enhance Visual Perception and Performance in a Virtual Environment? Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 43(22), 1197-1201. https://doi.org/10.1177/154193129904302206
+- Gibbs, Martin, et al. Proximity-Based Chat in a First Person Shooter: Using a Novel Voice Communication System for Online Play. 12 2006.
+- Kern, Angelika C., and Wolfgang Ellermeier. “Audio in VR: Effects of a Soundscape and Movement-Triggered Step Sounds on Presence.” Frontiers, Frontiers, 4 Feb. 2020. www.frontiersin.org/articles/10.3389/frobt.2020.00020/full
